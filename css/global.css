@@ -1,0 +1,56 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  color: #141414;
+}
+
+ul,
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 70px;
+}
+
+.decoracao {
+  font-size: 12.8rem;
+  max-width: 4ch;
+  line-height: 1;
+  word-break: break-all;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1070px) {
+  .decoracao {
+    font-size: 7rem;
+    max-width: initial;
+    word-break: initial;
+  }
+}

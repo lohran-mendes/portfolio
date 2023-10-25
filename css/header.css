@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-lista {
+  display: flex;
+  gap: 30px;
+  font-size: 1.8rem;
+}
+
+.header-lista li {
+  border-radius: 3px;
+}
+
+.header-lista li a {
+  color: 3D3D3D;
+  display: block;
+  padding: 10px 20px;
+}
+
+.header-lista li:hover {
+  background: #b29ab6;
+}
+
+@media (max-width: 730px) {
+  .header {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .header-lista {
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .header-lista li {
+    background: #f5f5f5;
+    flex-wrap: wrap;
+  }
+}

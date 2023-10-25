@@ -1,0 +1,147 @@
+.formacao {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.fundo {
+  background-color: #141414;
+  color: #a3a3a3;
+}
+
+.formacao .decoracao {
+  color: #000000;
+  max-width: 5ch;
+}
+
+.formacao-texto {
+  font-size: 2.4rem;
+  max-width: 40ch;
+  margin-bottom: 50px;
+  line-height: 1.33;
+}
+
+.formacao-texto strong {
+  color: white;
+}
+
+.formacao-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  flex: 1;
+  background: #090909;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-curso {
+  color: white;
+  position: relative;
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  background: linear-gradient(180deg, #4e4e70 0%, #b29ab6 64.58%);
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  left: -24px;
+}
+
+.faculdade-tipo {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.faculdade-instituicao {
+  font-size: 1.3rem;
+}
+
+.cursos li,
+.idiomas li {
+  color: white;
+  font-size: 1.4rem;
+}
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cursos li span,
+.idiomas li span {
+  color: #a3a3a3;
+  font-size: 1.4rem;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.cursos li,
+.idiomas li {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  background: url(../img/cursos.svg) no-repeat center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -5px;
+}
+
+.formacao-extra .idiomas h3::before {
+  background: url(../img/idiomas.svg) no-repeat center;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
+
+@media (max-width: 1070px) {
+  div.container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .formacao-texto {
+    font-size: 1.7rem;
+    max-width: initial;
+  }
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+  section.formacao .container h2.decoracao {
+    color: white;
+  }
+}
